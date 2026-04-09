@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="box">
+        <h3 class="box-title">Random Number Generator</h3>
+        <div class="digit-container">
+          <button class="clipboard btn" onclick="onCopyToClipboard()">
+            <span class="copy-status"></span>
+            <img
+              src="./assets/clickboard.svg"
+              alt="clipboard-icon"
+              class="icon"
+            />
+          </button>
+          <input class="digit" readonly disabled value="0" />
+          <input class="digit" readonly disabled value="0" />
+          <input class="digit" readonly disabled value="0" />
+          <input class="digit" readonly disabled value="0" />
+          <input class="digit" readonly disabled value="0" />
+          <input class="digit" readonly disabled value="0" />
+          <input class="digit" readonly disabled value="0" />
+          <input class="digit" readonly disabled value="0" />
+        </div>
+        <div class="pass-option-contain">
+            <label for="isNumber" class="checkbox">
+                <input type="checkbox" id="isNumber">
+                0 ~ 9
+            </label>
+            <label for="isUppercase" class="checkbox">
+                <input type="checkbox" id="isUppercase">
+                A ~ Z
+            </label>
+            <label for="isLowercase" class="checkbox">
+                <input type="checkbox" id="isLowercase">
+                a ~ z
+            </label>
+            <label for="isSpecial" class="checkbox">
+                <input type="checkbox" id="isSpecial">
+                ~!@#$%^&=+-_
+            </label>
+        </div>
+        <button class="btn btn-primary" onclick="onGenerateNumber()">
+          Generate
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
